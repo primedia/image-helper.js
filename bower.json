@@ -1,0 +1,12 @@
+{
+  "name": "image-helper",
+  "version": "0.0.1",
+  "main": "image-helper.js",
+  "dependencies": {
+    "jquery": null
+  },
+  "ignore": [
+    "package.json",
+    "README.md"
+  ]
+}

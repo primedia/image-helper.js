@@ -5,6 +5,7 @@ define ['jquery'], ($) ->
   currentServerIndex = -1
 
   notFoundPath = ""
+  notFoundImageWidth = ""
   assetHostMetaKey = "asset_host"
 
   isInvalidURL = (images) ->
@@ -52,11 +53,19 @@ define ['jquery'], ($) ->
   setNotFoundPath = (path) ->
     notFoundPath = path
 
-  isInvalidURL:     isInvalidURL
-  url:              url
-  pickServer:       pickServer
-  assetURL:         assetURL
-  notFoundURL:      notFoundURL
-  setNotFoundPath:  setNotFoundPath
-  servers:          servers
-  _contentFromMeta: _contentFromMeta
+  notFoundImageWidth = ->
+    notFoundImageWidth
+
+  setNotFoundImageWidth = (width) ->
+    notFoundImageWidth = width
+
+  isInvalidURL:          isInvalidURL
+  url:                   url
+  pickServer:            pickServer
+  assetURL:              assetURL
+  notFoundURL:           notFoundURL
+  notFoundImageWidth:    notFoundImageWidth
+  setNotFoundImageWidth: setNotFoundImageWidth
+  setNotFoundPath:       setNotFoundPath
+  servers:               servers
+  _contentFromMeta:      _contentFromMeta
